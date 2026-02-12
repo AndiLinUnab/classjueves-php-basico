@@ -2,6 +2,7 @@
 
 use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('welcome');
@@ -11,9 +12,12 @@ Route::get('/mi-nombre', function () {
     return view('ANDI LIN');
 });
 
-
 Route::get('/contactanos', function () {
     return view('form');
+});
+
+Route::get('/store', function (Request $request) {
+    print_r($request->all());
 });
 
 Route::get('/php-basico', function () {

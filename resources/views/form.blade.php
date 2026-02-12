@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Contáctanos</h2>
         <p>Envíanos un mensaje y te responderemos lo antes posible.</p>
 
-        <form method="POST">
+        <form action="/store" method="GET">
             <div class="input-group">
                 <input type="email" name="email" placeholder="Tu correo electrónico" required>
             </div>
